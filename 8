@@ -1,0 +1,18 @@
+
+explained_variance_ratio = pca.explained_variance_ratio_
+print("Principal Components:")
+print(components)
+print("Explained Variance Ratio:")
+print(explained_variance_ratio)
+plt.plot(explained_variance_ratio)
+plt.xlabel("Principal Component")
+plt.ylabel("Explained Variance Ratio")
+plt.title("PCA Explained Variance Ratio")
+plt.show()
+k = 2
+data_pca_k = data_pca[:, :k]
+plt.scatter(data_pca_k[:, 0], data_pca_k[:, 1])
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.title("PCA Projected Data")
+plt.show()
